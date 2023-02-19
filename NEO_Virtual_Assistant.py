@@ -24,7 +24,7 @@ from tkinter import filedialog
 from tkinter import messagebox
 from cryptography.fernet import Fernet
 
-environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
+environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1' # Initialize Pygame Sound
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -83,7 +83,7 @@ def MainMenu():
     #_____MainMenu Window Configuration_____#
 
     window.configure(bg = "#151d33")
-    Main = PhotoImage(file = f"PNG\\MainMenu.png")
+    Main = PhotoImage(file = f"GUI Images\\MainMenu.png")
     Main_Frame = Frame(window,bg = "#151d33",height = 270,width = 503,bd = 0,highlightthickness = 0,relief = "ridge", borderwidth = 0) # Main Frame
     Main_Frame.place(x = 82, y = 15)
     MainMenuu = Label(Main_Frame, bg = "#151d33", image = Main, highlightthickness = 0,relief = "ridge", borderwidth = 0)
@@ -99,23 +99,23 @@ def Task():
     #_____All images for Task Section_____#
 
     # Sections Button Image (unhighlighted)
-    To_Do_0 = PhotoImage(file = f"PNG\\To_Do_0.png")
-    Timer_0 = PhotoImage(file = f"PNG\\Timer_0.png")
+    To_Do_0 = PhotoImage(file = f"GUI Images\\To_Do_0.png")
+    Timer_0 = PhotoImage(file = f"GUI Images\\Timer_0.png")
     # Sections Button Image (highlighted)
-    To_Do_1 = PhotoImage(file = f"PNG\\To_Do_1.png")
-    Timer_1 = PhotoImage(file = f"PNG\\Timer_1.png")
+    To_Do_1 = PhotoImage(file = f"GUI Images\\To_Do_1.png")
+    Timer_1 = PhotoImage(file = f"GUI Images\\Timer_1.png")
     # To-Do Frame Image
-    ToDo_Main = PhotoImage(file = f"PNG\\To_Do_Main.png")
-    ToDo_Entry_IMG = PhotoImage(file = f"PNG\\task_entry.png")
-    ToDo_Del_IMG = PhotoImage(file = f"PNG\\task_del1.png")
-    ToDo_Add_IMG = PhotoImage(file = f"PNG\\task_add1.png")
-    Arrow_IMG = PhotoImage(file = f"PNG\\arrow.png") 
-    Arrow1_IMG = PhotoImage(file = f"PNG\\arrow1.png")
+    ToDo_Main = PhotoImage(file = f"GUI Images\\To_Do_Main.png")
+    ToDo_Entry_IMG = PhotoImage(file = f"GUI Images\\task_entry.png")
+    ToDo_Del_IMG = PhotoImage(file = f"GUI Images\\task_del1.png")
+    ToDo_Add_IMG = PhotoImage(file = f"GUI Images\\task_add1.png")
+    Arrow_IMG = PhotoImage(file = f"GUI Images\\arrow.png") 
+    Arrow1_IMG = PhotoImage(file = f"GUI Images\\arrow1.png")
     # Pomodoro Frame Image
-    Pomodoro_IMG1 = PhotoImage(file = f"PNG\\pomodoro1.png")
-    Pomodoro_IMG2 = PhotoImage(file = f"PNG\\pomodoro2.png")
-    Pomodoro_IMG3 = PhotoImage(file = f"PNG\\pomodoro3.png")
-    Pomodoro_IMG4 = PhotoImage(file = f"PNG\\pomodoro4.png")
+    Pomodoro_IMG1 = PhotoImage(file = f"GUI Images\\pomodoro1.png")
+    Pomodoro_IMG2 = PhotoImage(file = f"GUI Images\\pomodoro2.png")
+    Pomodoro_IMG3 = PhotoImage(file = f"GUI Images\\pomodoro3.png")
+    Pomodoro_IMG4 = PhotoImage(file = f"GUI Images\\pomodoro4.png")
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -124,7 +124,7 @@ def Task():
     window.configure(bg = "#151d33")
     MainFont_Clock = Font(family="DS-Digital", size=64, weight = 'bold')
     MainFont_Clock_Small = Font(family="DS-Digital", size=17, weight = 'bold')
-    ToDo_BG_IMG = PhotoImage(file = f"PNG\\Task2.png")
+    ToDo_BG_IMG = PhotoImage(file = f"GUI Images\\Task2.png")
 
     Task_Frame = Frame(window,bg = "#151d33",height = 270,width = 503,bd = 0,highlightthickness = 0,relief = "ridge", borderwidth = 0)
     Task_Frame.place(x = 82, y = 15)
@@ -335,11 +335,11 @@ def Task():
             global Thread_Value
             Thread_Value = False
 
-        Reset_Btn_IMG = PhotoImage(file = f"PNG\\reset_btn.png")
+        Reset_Btn_IMG = PhotoImage(file = f"GUI Images\\reset_btn.png")
         Reset_Btn = Button(image = Reset_Btn_IMG,borderwidth = 0,highlightthickness = 0,command = Thread_Stop, activebackground= '#151D33', relief = "flat")
         Reset_Btn.place(x = 346, y = 196,width = 55,height = 30)
 
-        Play_Btn_IMG = PhotoImage(file = f"PNG\\play_btn.png")
+        Play_Btn_IMG = PhotoImage(file = f"GUI Images\\play_btn.png")
         Play_Btn = Button(image = Play_Btn_IMG,borderwidth = 0,highlightthickness = 0,command = Timer_Start,activebackground= '#151D33', relief = "flat")
         Play_Btn.place(x = 267, y = 196,width = 54,height = 30)
 
@@ -368,17 +368,17 @@ def Task():
 
             # Delete Empty Rows Appearing After Button Press
             output=""
-            with open("NoteTXT.txt") as f:
+            with open("Sample Files\\Note_Text\\NoteTXT.txt") as f:
                 for line in f:
                     if not line.isspace():
                         output+=line
                         
-            f = open("NoteTXT.txt","w")
+            f = open("Sample Files\\Note_Text\\NoteTXT.txt","w")
             f.write(output)
             f.close()
 
             # Duplicate Item Validation
-            NoteTXT = open('NoteTXT.txt', 'r')
+            NoteTXT = open('Sample Files\\Note_Text\\NoteTXT.txt', 'r')
             data2 = NoteTXT.readlines()
             to_add = task_entry.get()
 
@@ -407,7 +407,7 @@ def Task():
 
             # Add item to the text file
             if to_add != "" and X == 0:
-                with open('NoteTXT.txt', 'a') as file:
+                with open('Sample Files\\Note_Text\\NoteTXT.txt', 'a') as file:
                     file.write('\n - ' + to_add.rstrip())
 
             # Add item to the ListBox
@@ -428,13 +428,13 @@ def Task():
 
             list_validation()
 
-            NoteTXT = open('NoteTXT.txt', 'r')
+            NoteTXT = open('Sample Files\\Note_Text\\NoteTXT.txt', 'r')
             data2 = NoteTXT.readlines()
 
             # Delete item from the text file
             selected = List.get(ANCHOR)
 
-            with open("NoteTXT.txt", "w") as file:
+            with open("Sample Files\\Note_Text\\NoteTXT.txt", "w") as file:
                 for line in data2:
                     if line.strip("\n") != selected.rstrip():
                         file.write(line)
@@ -484,7 +484,7 @@ def Task():
         Scroll.config(command=List.yview)
 
         # Opening & Inserting textfile contents into ListBox
-        NoteTXT = open('NoteTXT.txt', 'r')
+        NoteTXT = open('Sample Files\\Note_Text\\NoteTXT.txt', 'r')
         data = NoteTXT.readlines()
         for item in data: 
             List.insert(END,item)
@@ -518,42 +518,42 @@ def Security():
     #_____All images for Security Section_____#
 
     # Security Sections Button Image (unhighlighted)
-    VPN_0 = PhotoImage(file = f"PNG\\VPN_0.png")
-    Encryptor_0 = PhotoImage(file = f"PNG\\Encryptor_0.png")
-    Scanner_0 = PhotoImage(file = f"PNG\\Scanner_0.png")
+    VPN_0 = PhotoImage(file = f"GUI Images\\VPN_0.png")
+    Encryptor_0 = PhotoImage(file = f"GUI Images\\Encryptor_0.png")
+    Scanner_0 = PhotoImage(file = f"GUI Images\\Scanner_0.png")
 
     # Security Sections Button Image (highlighted)
-    VPN_1 = PhotoImage(file = f"PNG\\VPN_1.png")
-    Encryptor_1 = PhotoImage(file = f"PNG\\Encryptor_1.png")
-    Scanner_1 = PhotoImage(file = f"PNG\\Scanner_1.png")
+    VPN_1 = PhotoImage(file = f"GUI Images\\VPN_1.png")
+    Encryptor_1 = PhotoImage(file = f"GUI Images\\Encryptor_1.png")
+    Scanner_1 = PhotoImage(file = f"GUI Images\\Scanner_1.png")
 
-    Padlock_IMG = PhotoImage(f"PNG\\Pad.png") # Padlock IMG
+    Padlock_IMG = PhotoImage(f"GUI Images\\Pad.png") # Padlock IMG
 
-    Security_Main_IMG = PhotoImage(file = f"PNG\\Security.png") # VPN Background Main
-    Security_OFF_IMG = PhotoImage(file = f"PNG\\Security1.png") # VPN Background OFF
-    Security_ON_IMG = PhotoImage(file = f"PNG\\Security2.png") # VPN Background ON
+    Security_Main_IMG = PhotoImage(file = f"GUI Images\\Security.png") # VPN Background Main
+    Security_OFF_IMG = PhotoImage(file = f"GUI Images\\Security1.png") # VPN Background OFF
+    Security_ON_IMG = PhotoImage(file = f"GUI Images\\Security2.png") # VPN Background ON
 
-    OFF_IMG = PhotoImage(file = f"PNG\\OFF.png") # VPN OFF Button
-    ON_IMG = PhotoImage(file = f"PNG\\ON.png") # VPN OFF Button
+    OFF_IMG = PhotoImage(file = f"GUI Images\\OFF.png") # VPN OFF Button
+    ON_IMG = PhotoImage(file = f"GUI Images\\ON.png") # VPN OFF Button
 
-    Encryptor_BG_IMG = PhotoImage(file = f"PNG\\Encryptor_BG.png")
-    Encryptor_BG1_IMG = PhotoImage(file = f"PNG\\Encryptor_BG1.png")
-    Encryptor_BG2_IMG = PhotoImage(file = f"PNG\\Encryptor_BG2.png")
+    Encryptor_BG_IMG = PhotoImage(file = f"GUI Images\\Encryptor_BG.png")
+    Encryptor_BG1_IMG = PhotoImage(file = f"GUI Images\\Encryptor_BG1.png")
+    Encryptor_BG2_IMG = PhotoImage(file = f"GUI Images\\Encryptor_BG2.png")
 
-    GenerateKey_IMG = PhotoImage(file = f"PNG\\GenerateKey.png")
-    Encrypt_IMG = PhotoImage(file = f"PNG\\Encrypt.png")
-    Decrypt_IMG = PhotoImage(file = f"PNG\\Decrypt.png")
-    DotKey_IMG = PhotoImage(file = f"PNG\\DotKey.png")
-    DotTXT_IMG = PhotoImage(file = f"PNG\\DotTXT.png")
+    GenerateKey_IMG = PhotoImage(file = f"GUI Images\\GenerateKey.png")
+    Encrypt_IMG = PhotoImage(file = f"GUI Images\\Encrypt.png")
+    Decrypt_IMG = PhotoImage(file = f"GUI Images\\Decrypt.png")
+    DotKey_IMG = PhotoImage(file = f"GUI Images\\DotKey.png")
+    DotTXT_IMG = PhotoImage(file = f"GUI Images\\DotTXT.png")
 
-    Scanner_BG_IMG = PhotoImage(file = f"PNG\\Scanner_BG.png")
-    Scanner_BG_IMG_1 = PhotoImage(file = f"PNG\\Scanner_BG_1.png")
-    Scan_BTN = PhotoImage(file = f"PNG\\Scan_BTN.png")
-    Select_BTN = PhotoImage(file = f"PNG\\Select_BTN.png")
-    URL_Good = PhotoImage(file = f"PNG\\URL_Good.png")
-    File_Good = PhotoImage(file = f"PNG\\File_Good.png")
-    Error_Bad = PhotoImage(file = f"PNG\\Error_Bad.png")
-    Back_IMG = PhotoImage(file = f"PNG\\Back.png")
+    Scanner_BG_IMG = PhotoImage(file = f"GUI Images\\Scanner_BG.png")
+    Scanner_BG_IMG_1 = PhotoImage(file = f"GUI Images\\Scanner_BG_1.png")
+    Scan_BTN = PhotoImage(file = f"GUI Images\\Scan_BTN.png")
+    Select_BTN = PhotoImage(file = f"GUI Images\\Select_BTN.png")
+    URL_Good = PhotoImage(file = f"GUI Images\\URL_Good.png")
+    File_Good = PhotoImage(file = f"GUI Images\\File_Good.png")
+    Error_Bad = PhotoImage(file = f"GUI Images\\Error_Bad.png")
+    Back_IMG = PhotoImage(file = f"GUI Images\\Back.png")
     
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -595,7 +595,7 @@ def Security():
                 subprocess.call('C://Program Files//OpenVPN Connect//OpenVPNConnect.exe')
                 X = 0
                 while X < 1: # Wait until OpenVPN is fully loaded so the ON button can be located
-                    SWITCH = pg.locateOnScreen('ImageRecog\\Switch.png',grayscale=True, confidence=0.8)
+                    SWITCH = pg.locateOnScreen('Image Recognition\\Switch.png',grayscale=True, confidence=0.8)
                     if SWITCH != None:
                         pg.click(SWITCH)
                         X = 1
@@ -611,7 +611,7 @@ def Security():
                 subprocess.call('C://Program Files//OpenVPN Connect//OpenVPNConnect.exe')
                 X = 0
                 while X < 1: # Wait until OpenVPN is fully loaded so the ON button can be located
-                    SWITCH = pg.locateOnScreen('ImageRecog\\Switch2.png',grayscale=True, confidence=0.8)
+                    SWITCH = pg.locateOnScreen('Image Recognition\\Switch2.png',grayscale=True, confidence=0.8)
                     if SWITCH != None:
                         pg.click(SWITCH)
                         X = 1
@@ -654,7 +654,7 @@ def Security():
 
         # 128-bits, AES128 Encryption (UTF 8 Encoding)
 
-        path = f"Generated_Key\\"
+        path = f"Sample Files\\Generated_Key"
         dir_list = os.listdir(path)
 
         if len(dir_list) == 0:
@@ -671,7 +671,7 @@ def Security():
         def Generate():
             key = Fernet.generate_key() # Generate Key
 
-            with open(os.path.join('Generated_Key\\','keygen.key'),'wb')as mykey: # Save Generated Key
+            with open(os.path.join('Sample Files\\Generated_Key','keygen.key'),'wb')as mykey: # Save Generated Key
                mykey.write(key)
 
             Enc.configure(image = Encryptor_BG1_IMG)
@@ -682,7 +682,7 @@ def Security():
             global TXT_AND_KEY
             global data1
             try:
-                DotKeyName = filedialog.askopenfilename(initialdir="Generated_Key\\",title="Select A File", filetypes=(("key", "*.key"), ("all files", "*.*")))
+                DotKeyName = filedialog.askopenfilename(initialdir="Sample Files\\Generated_Key\\",title="Select A File", filetypes=(("key", "*.key"), ("all files", "*.*")))
                 seed1 = open(DotKeyName, 'rb')
                 data1 = seed1.read()
                 print(data1)
@@ -697,7 +697,7 @@ def Security():
             global TXT_AND_KEY
             global data2
             try:
-                DotTXT = filedialog.askopenfilename(initialdir="Secret_Text\\",title="Select A File", filetypes=(("text", "*.txt"), ("all files", "*.*")))
+                DotTXT = filedialog.askopenfilename(initialdir="Sample Files\\Secret_Text\\\\",title="Select A File", filetypes=(("text", "*.txt"), ("all files", "*.*")))
                 seed2 = open(DotTXT, 'rb')
                 data2 = seed2.read()
                 print(data2)
@@ -713,13 +713,13 @@ def Security():
             global data2 # TXT File
             global TXT_AND_KEY
 
-            path = f"Secret_Text\\" # Path to save file
+            path = f"Sample Files\\Secret_Text\\" # Path to save file
 
             try:
                 if TXT_AND_KEY == 2:
                     f = Fernet(data1)
                     encryptedData = f.encrypt(data2)
-                    with open(os.path.join('Secret_Text\\', 'SecretEncrypted.txt'),'wb') as SecretEncrypted: # Save Encrypted File
+                    with open(os.path.join('Sample Files\\Secret_Text\\', 'SecretEncrypted.txt'),'wb') as SecretEncrypted: # Save Encrypted File
                         SecretEncrypted.write(encryptedData)
                     TXT_AND_KEY = 0
             except:
@@ -736,7 +736,7 @@ def Security():
                 if TXT_AND_KEY == 2:
                     f = Fernet(data1) # Utilize the Key
                     decryptedData = f.decrypt(data2) # Encrypt the Data
-                    with open(os.path.join('Secret_Text\\', 'SecretDecrypted.txt'),'wb') as SecretDecrypted: # Save Encrypted File
+                    with open(os.path.join('Sample Files\\Secret_Text\\', 'SecretDecrypted.txt'),'wb') as SecretDecrypted: # Save Encrypted File
                         SecretDecrypted.write(decryptedData)
                     TXT_AND_KEY = 0
             except:
@@ -1052,28 +1052,28 @@ def MainWindow():
         relief = "ridge")
     canvas.place(x = 0, y = 0)
 
-    MainWindow_img1 = PhotoImage(file = f"PNG\\MainWindow.png")
+    MainWindow_img1 = PhotoImage(file = f"GUI Images\\MainWindow.png")
     MainWindow = canvas.create_image(
         300.0, 150.0,
         image=MainWindow_img1)
 
-    HHimg0 = PhotoImage(file = f"PNG\\HHimg0.png") # For Hover Button 0 (Mic)
-    HHimg1 = PhotoImage(file = f"PNG\\HHimg1.png") # For Hover Button 1 (Settings)
-    HHimg2 = PhotoImage(file = f"PNG\\HHimg2.png") # For Hover Button 2 (Security)
-    HHimg3 = PhotoImage(file = f"PNG\\HHimg3.png") # For Hover Button 3 (Task)
-    HHimg4 = PhotoImage(file = f"PNG\\HHimg4.png") # For Hover Button 4 (Main Menu)
+    HHimg0 = PhotoImage(file = f"GUI Images\\HHimg0.png") # For Hover Button 0 (Mic)
+    HHimg1 = PhotoImage(file = f"GUI Images\\HHimg1.png") # For Hover Button 1 (Settings)
+    HHimg2 = PhotoImage(file = f"GUI Images\\HHimg2.png") # For Hover Button 2 (Security)
+    HHimg3 = PhotoImage(file = f"GUI Images\\HHimg3.png") # For Hover Button 3 (Task)
+    HHimg4 = PhotoImage(file = f"GUI Images\\HHimg4.png") # For Hover Button 4 (Main Menu)
 
-    Himg0 = PhotoImage(file = f"PNG\\Himg0.png") # For Pressed Button 0 (Mic)
-    Himg1 = PhotoImage(file = f"PNG\\Himg1.png") # For Pressed Button 1 (Settings)
-    Himg2 = PhotoImage(file = f"PNG\\Himg2.png") # For Pressed Button 2 (Security)
-    Himg3 = PhotoImage(file = f"PNG\\Himg3.png") # For Pressed Button 3 (Task)
-    Himg4 = PhotoImage(file = f"PNG\\Himg4.png") # For Pressed Button 4 (Main Menu)
+    Himg0 = PhotoImage(file = f"GUI Images\\Himg0.png") # For Pressed Button 0 (Mic)
+    Himg1 = PhotoImage(file = f"GUI Images\\Himg1.png") # For Pressed Button 1 (Settings)
+    Himg2 = PhotoImage(file = f"GUI Images\\Himg2.png") # For Pressed Button 2 (Security)
+    Himg3 = PhotoImage(file = f"GUI Images\\Himg3.png") # For Pressed Button 3 (Task)
+    Himg4 = PhotoImage(file = f"GUI Images\\Himg4.png") # For Pressed Button 4 (Main Menu)
 
-    img0 = PhotoImage(file = f"PNG\\img0.png") # For Main Button 0 (Mic)
-    img1 = PhotoImage(file = f"PNG\\img1.png") # For Main Button 1 (Settings)
-    img2 = PhotoImage(file = f"PNG\\img2.png") # For Main Button 2 (Security)
-    img3 = PhotoImage(file = f"PNG\\img3.png") # For Main Button 3 (Task)
-    img4 = PhotoImage(file = f"PNG\\img4.png") # For Main Button 4 (Main Menu)
+    img0 = PhotoImage(file = f"GUI Images\\img0.png") # For Main Button 0 (Mic)
+    img1 = PhotoImage(file = f"GUI Images\\img1.png") # For Main Button 1 (Settings)
+    img2 = PhotoImage(file = f"GUI Images\\img2.png") # For Main Button 2 (Security)
+    img3 = PhotoImage(file = f"GUI Images\\img3.png") # For Main Button 3 (Task)
+    img4 = PhotoImage(file = f"GUI Images\\img4.png") # For Main Button 4 (Main Menu)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -1266,7 +1266,7 @@ def MainWindow():
 
     #_____Startup Loading Screen_____#
 
-    NeoStartup = PhotoImage(file = f"PNG\\NeoStartup.png")
+    NeoStartup = PhotoImage(file = f"GUI Images\\NeoStartup.png")
     Loading = Label(window, bg = "#181818", height = 300,width = 600,  image = NeoStartup, highlightthickness = 0,relief = "ridge", borderwidth = 0)
     Loading.pack()
 
@@ -1287,7 +1287,7 @@ def MainWindow():
     pass_entry = Entry(bd = 0,bg = "#ececec",highlightthickness = 0, font = FontLogin, show="*")
     pass_entry.place(x = 184, y = 198,width = 232,height = 26)
 
-    StartNEO_IMG = PhotoImage(file = f"PNG\\StartNEO.png")
+    StartNEO_IMG = PhotoImage(file = f"GUI Images\\StartNEO.png")
     StartNEO_Btn = Button(image = StartNEO_IMG,borderwidth = 0,highlightthickness = 0,command = verify,activebackground='#151D33',relief = "flat")
     StartNEO_Btn.place(x = 236, y = 247,width = 128,height = 36)
     
