@@ -1,4 +1,3 @@
-
 <h1 align="center">
   <br>
   <a href="https://github.com/StephenZ06/virtual-assistant"><img src="https://user-images.githubusercontent.com/90829349/220016338-ed9cd318-b61b-4615-882c-6e422d99cde3.png" alt="NEO" width="200"></a>
@@ -15,30 +14,23 @@
   <a href="#credits">Credits</a> •
 </p>
 
-
 https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-9a42-86d6ee9b7858.mp4
+
+
+-----
 
 
 ## Features
 
+**| Task Section | **This section is focused on the produtive aspect of the application.
+  - ToDo List - fadfa
 
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown  
-* Syntax highlighting
-* [KaTeX](https://khan.github.io/KaTeX/) Support
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
+**Security Section: **This section leans to the security aspect of the application.
+
+
+-----
+
+
 
 ## How To Use
 
