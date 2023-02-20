@@ -32,9 +32,10 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![2023-02-20 13-45-15 (online-video-cutter com)](https://user-images.githubusercontent.com/90829349/220020271-b0d1b460-ee6f-47c0-8cc7-af2c701879a8.gif)
 
 ## Key Features
+
 
 * LivePreview - Make changes, See changes
   - Instantly see what your Markdown documents look like in HTML as you create them.
