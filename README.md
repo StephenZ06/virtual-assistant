@@ -32,7 +32,9 @@
   <a href="#license">License</a>
 </p>
 
-![2023-02-20 13-45-15 (online-video-cutter com)](https://user-images.githubusercontent.com/90829349/220020271-b0d1b460-ee6f-47c0-8cc7-af2c701879a8.gif)
+
+https://user-images.githubusercontent.com/90829349/220021175-9362f725-6316-409e-a3a0-66a5a3877ce3.mp4
+
 
 ## Key Features
 
