@@ -16,16 +16,16 @@
 
 https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-9a42-86d6ee9b7858.mp4
 
-
+<br />
 -----
-
+<br />
 
 ## Features
 
-**| Task Section | **This section is focused on the produtive aspect of the application.
+**`Task Section`**This section is focused on the produtive aspect of the application.
   - ToDo List - fadfa
 
-**Security Section: **This section leans to the security aspect of the application.
+**`Security Section:`**This section leans to the security aspect of the application.
 
 
 -----
