@@ -1,11 +1,12 @@
 
 <h1 align="center">
   <br>
-  <a><img src="https://raw.githubusercontent.com/amitmerchant1990/electron markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://user-images.githubusercontent.com/90829349/220016338-ed9cd318-b61b-4615-882c-6e422d99cde3.png" alt="Hello" width="200"></a>
   <br>
   NEO Virtual Assistant
   <br>
 </h1>
+
 
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 
