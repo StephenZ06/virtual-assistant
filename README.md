@@ -17,20 +17,24 @@
 https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-9a42-86d6ee9b7858.mp4
 
 <br />
------
-<br />
 
 ## Features
 
-**`Task Section`**This section is focused on the produtive aspect of the application.
+`Task Section`
+<br />
+<br />
+This section is focused on the produtive aspect of the application.
   - ToDo List - fadfa
 
-**`Security Section:`**This section leans to the security aspect of the application.
+`Security Section`
+<br />
+This section leans to the security aspect of the application.
+<br />
+This section is focused on the security aspect of the application.
+  - fdsa
 
 
------
-
-
+<br />
 
 ## How To Use
 
@@ -77,4 +81,3 @@ This software uses the following open source packages:
 > [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
 > GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
 > Twitter [@amit_merchant](https://twitter.com/amit_merchant)
-
