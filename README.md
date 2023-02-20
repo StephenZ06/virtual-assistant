@@ -20,16 +20,19 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 
 ## Features
 
-`Task Section`
+`Task Section:` This section is focused on the produtive aspect of the application.
 <br />
 <br />
-This section is focused on the produtive aspect of the application.
-  - ToDo List - fadfa
+  - ToDo List: <br />
+  Manage your everday tasks with the simple ToDo list
+  - Pomodoro Timer: Structure your workflow with the Pomodoro Timer, a time management technique that breaks work into intervals of 25 minutes, separated by short 5-minute breaks.
 
-`Security Section`
 <br />
-This section leans to the security aspect of the application.
+
+`Security Section: ` This section leans to the security aspect of the application.
 <br />
+<br />
+
 This section is focused on the security aspect of the application.
   - fdsa
 
