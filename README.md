@@ -30,7 +30,7 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 <br />
 
   - Pomodoro Timer:
-<br />
+
   Manage distractions and control your time with the Pomodoro Timer, an effective time management technique that breaks work into intervals of 25 minutes, separated by short 5-minute breaks, which overall helps structure your workflow and maintain motivation.
   
 <br />
