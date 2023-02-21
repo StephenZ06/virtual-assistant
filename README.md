@@ -82,7 +82,7 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 <tr>
 <td>
  
-`SPEECH RECOGNITION:` This feature allows all of the above sections to be controlled purely by voice commands.
+**`SPEECH RECOGNITION:`** This feature allows all of the above sections to be controlled purely by voice commands.
 
    Simply press [CTRL] + [V] on the keyboard to activate the feature and mention the specific commands to do the specific functions. The commands can be found in the full PDF Documentation Guide.
    
