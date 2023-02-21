@@ -24,12 +24,11 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 <br />
 <br />
   - ToDo List:
-  <br />
   Keep track of and manage your daily tasks by adding them to the To-Do List so you don't forget about them later in the day. Whether it is for work or personal tasks, it keeps you mindful of all your tasks to be accomplished.
   
 <br />
+
   - Pomodoro Timer:
-  <br />
   Manage distractions and control your time with the Pomodoro Timer, an effective time management technique that breaks work into intervals of 25 minutes, separated by short 5-minute breaks, which overall helps structure your workflow and maintain motivation.
 
 <br />
@@ -39,17 +38,14 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 <br />
 <br />
   - VPN:
-  <br />
   Protect your privacy and shield your online data by encrypting your internet traffic with a VPN (virtual private network). This service uses an OpenVPN client to connect to a private server in France. (More servers may be added in the future).
 
 <br />
   - Encrypt/Decrypt Files:
-  <br />
   Encrypt any text file into an unreadable ciphertext. This works by generating a unique private key, which is then used to encrypt any.txt files that are uploaded to the app. The same file can also be decrypted by uploading it and using the same private key.
 
 <br />
   - File & Url Scanner:
-  <br />
   Scan files and URLs for viruses, malware, and other types of malicious content. This feature utilizes the Virus Total API, which gathers data from a variety of antivirus engines and other security technologies in order to provide an in-depth analysis of the potential security risks connected to a particular file or URL.
 
 
@@ -100,3 +96,5 @@ This software uses the following packages:
 
 
 ---
+
+> [Stephen Matthew](https://www.linkedin.com/in/stephensirambang/)
