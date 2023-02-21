@@ -24,8 +24,9 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 <br />
 <br />
   - ToDo List:
-<br />
+
   Keep track of and manage your daily tasks by adding them to the To-Do List so you don't forget about them later in the day. Whether it is for work or personal tasks, it keeps you mindful of all your tasks to be accomplished.
+  
 <br />
 
   - Pomodoro Timer:
