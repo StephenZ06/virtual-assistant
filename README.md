@@ -33,8 +33,7 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 
   Manage distractions and control your time with the Pomodoro Timer, an effective time management technique that breaks work into intervals of 25 minutes, separated by short 5-minute breaks, which overall helps structure your workflow and maintain motivation.
   
-<br />
-<br />
+---
 
 `SECURITY SECTION:` This section leans to the security aspect of the application.
 <br />
@@ -55,8 +54,7 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
   
   Scan files and URLs for viruses, malware, and other types of malicious content. This feature utilizes the Virus Total API, which gathers data from a variety of antivirus engines and other security technologies in order to provide an in-depth analysis of the potential security risks connected to a particular file or URL.
 
- <br />
- <br />
+---
  
 `SPEECH RECOGNITION:` This feature allows all of the above sections to be controlled purely by voice commands. Simply press [CTRL] + [V] on the keyboard to activate the feature and mention the specific commands to do the specific functions. The commands can be found in the full PDF Documentation Guide.
 
