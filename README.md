@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 <tr>
 <td>
 
-**`TASK SECTION:`** This section is focused on the produtive aspect of the application.
+**`TASK SECTION:`** This section is focused on the productive aspect of the application.
 
 <br />
 
