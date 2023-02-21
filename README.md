@@ -18,11 +18,20 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 
 <br />
 
-## Features
+---
 
-`TASK SECTION:` This section is focused on the produtive aspect of the application.
+# Features
+
 <br />
+
+<table>
+<tr>
+<td>
+
+**`TASK SECTION:`** This section is focused on the produtive aspect of the application.
+
 <br />
+
   - ToDo List:
 
   Keep track of and manage your daily tasks by adding them to the To-Do List so you don't forget about them later in the day. Whether it is for work or personal tasks, it keeps you mindful of all your tasks to be accomplished.
@@ -32,31 +41,54 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
   - Pomodoro Timer:
 
   Manage distractions and control your time with the Pomodoro Timer, an effective time management technique that breaks work into intervals of 25 minutes, separated by short 5-minute breaks, which overall helps structure your workflow and maintain motivation.
-  
----
 
-`SECURITY SECTION:` This section leans to the security aspect of the application.
+</td>
+</tr>
+</table>
+
 <br />
+
+<table>
+<tr>
+<td>
+
+**`SECURITY SECTION:`** This section leans to the security aspect of the application.
+
 <br />
+
   - VPN:
   
-  Protect your privacy and shield your online data by encrypting your internet traffic with a VPN (virtual private network). This service uses an OpenVPN client to connect to a private server in France. (More servers may be added in the future).
-
+   Protect your privacy and shield your online data by encrypting your internet traffic with a VPN (virtual private network). This service uses an OpenVPN client to connect to a private server in France. (More servers may be added in the future).
+   
 <br />
 
   - Encrypt/Decrypt Files:
   
   Encrypt any text file into an unreadable ciphertext. This works by generating a unique private key, which is then used to encrypt any.txt files that are uploaded to the app. The same file can also be decrypted by uploading it and using the same private key.
-
+  
 <br />
 
   - File & Url Scanner:
   
   Scan files and URLs for viruses, malware, and other types of malicious content. This feature utilizes the Virus Total API, which gathers data from a variety of antivirus engines and other security technologies in order to provide an in-depth analysis of the potential security risks connected to a particular file or URL.
+  
+</td>
+</tr>
+</table>
 
----
+<br />
  
-`SPEECH RECOGNITION:` This feature allows all of the above sections to be controlled purely by voice commands. Simply press [CTRL] + [V] on the keyboard to activate the feature and mention the specific commands to do the specific functions. The commands can be found in the full PDF Documentation Guide.
+<table>
+<tr>
+<td>
+ 
+`SPEECH RECOGNITION:` This feature allows all of the above sections to be controlled purely by voice commands.
+
+   Simply press [CTRL] + [V] on the keyboard to activate the feature and mention the specific commands to do the specific functions. The commands can be found in the full PDF Documentation Guide.
+   
+</td>
+</tr>
+</table>
 
 <br />
 
@@ -65,7 +97,7 @@ https://user-images.githubusercontent.com/90829349/220021902-c69d2789-ad64-4dac-
 
 <br />
 
-## How To Use
+# How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Python](https://www.python.org/) installed on your computer. From your command line:
 
@@ -85,7 +117,7 @@ $ python NEO_Virtual_Assistant.py
 
 <br />
 
-## Credits
+# Credits
 
 This software uses the following packages:
 
@@ -98,8 +130,3 @@ This software uses the following packages:
 - Pyttsx3
 - SpeechRecognition
 - Emojis are taken from [Flaticon](https://www.flaticon.com/)
-
-
----
-
-> [Stephen Matthew](https://www.linkedin.com/in/stephensirambang/)
